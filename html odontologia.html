@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="PrincipalPic.jpg" alt="PrincipalPic" class="src" width="180" height="280"> 
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Specialists</a></li>
+          <li><a href="#">Our Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 class="title">Welcome to the Dental Clinic</h1>
+        <p>We provide dental services for the whole family. Contact us for an appointment today!</p>
+      </section>
+      <section>
+        <h2 class="services">Our Services</h2>
+        <ul>
+          <li>Dental Exams</li>
+          <li>Dental Cleaning</li>
+          <li>Cavity Treatments</li>
+          <li>Orthodontics</li>
+          <li>Dental Whitening</li>
+          <li>Dental Implants</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="Specialists">Our Specialists</h2>
+        <ul>
+          <li><a href="#">Dr. Andres Ruiz - General Dentist</a></li>
+          <li><a href="#">Dr. Natalia chavez - Orthodontist</a></li>
+          <li><a href="#">Dr. Joan aguirre - Endodontist</a></li>
+        </ul>
+      </section>
+      <section class="Contact">
+        <h2>Contact Us</h2>
+        <form action="send-email.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2023 Dental Clinic</p>
+    </footer>
+  </body>
+</html>

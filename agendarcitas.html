@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <title>Agendarcitas</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <div class="divprincipal">
+    <p>
+    <input type="button" value="Back" button style="margin-right: 980px;">
+    
+    </p>
+    <br><br>
+    <p>
+      <form action="guardar.php" method="post">
+        <div style="text-align:center;">
+        <input type="text" placeholder="Nombre paciente"><br><br>
+        <input type="text" placeholder="Cedula"><br><br>
+        <input type="tel" placeholder="Telefono"><br><br>
+        <input type="date" placeholder="Fecha"><br><br>
+        <fieldset>
+        <label>Atendido por:</label>
+         <select name="Atendido por:" id="Atendido por:">
+            <option value="Dr. Carlos Andres Perez">Dr. Carlos Andres Perez</option>
+            <option value="Dra. Diana Rojas">Dra. Diana Rojas</option>
+            <option value="Dr. Fernando Varela">Dr. Fernando Varela</option>
+         </select><br><br>
+        <label>Procedimiento a realizar</label>
+            <select name="Procedimiento a realizar" id="Procedimiento a realizar">
+                <option value="Ortodoncia">Ortodoncia</option>
+                <option value="Limpieza">Limpieza</option>
+                <option value="Cirugias">Cirugias</option>
+                <option value="Rayos x">Rayos x</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Guardar">
+        <input type="reset" value="Cancelar"> 
+        </div>
+      </form>
+    </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/9abcd757f7.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9abcd757f7.js" crossorigin="anonymous"></script>
+</head>
+<div class="container_fp">
+    <body>
+        <div>
+            <form class="form" id="form" onsubmit="mostrarDialogo(); return false;">
+                <a href="index.html" target="_self" class="Back">Back</a>
+                <h1 style="text-align: center;">Recuperar contraseña</h1><br><br><br>
+                <h3 style="text-align: center;">Por favor introduce tu cuenta de correo electronico</h3>
+                <label  for="recovery_pswd"><i class="fa-solid fa-envelope"></i></label>
+                <input type="text" id="recovery_pswd" name="recovery_pswd" placeholder="Ingresar correo"
+                style="opacity: 0.6;">
+                <button type="submit">Send</button><br><br>
+                <div class="questionmark">
+                    <button onclick="location.href='preguntas.html'" ><i class="fa-solid fa-question"></i></button>
+                </div> 
+            </form>
+            <div id="dialogo" class="oculto">
+                <h3>Mensaje enviado</h3>
+                <p>Por favor revisa tu bandeja de entrada o en correo no deseado.</p>
+                <button onclick="cerrarDialogo()">Cerrar</button>
+            </div>
+
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</div>
+</html>
